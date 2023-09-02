@@ -14,6 +14,6 @@ Eliminar Tarea: El usuario debe poder eliminar una tarea.
 
 Prioridad de Tareas: El sistema debe permitir que el usuario establezca una prioridad para cada tarea (alta, media, baja).
 
-Sprint Planning (Scrum): El sistema debe permitir al usuario organizar las tareas en sprints, asignando tareas a un sprint específico.
+//Sprint Planning (Scrum): El sistema debe permitir al usuario organizar las tareas en sprints, asignando tareas a un sprint específico. DESESTIMAR
 
-Finalización del Sprint (Scrum): El usuario debe poder finalizar un sprint y comenzar uno nuevo.
+//Finalización del Sprint (Scrum): El usuario debe poder finalizar un sprint y comenzar uno nuevo. DESESTIMAR
