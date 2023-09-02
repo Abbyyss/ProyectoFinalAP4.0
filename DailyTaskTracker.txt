@@ -1,0 +1,19 @@
+Daily Task Tracker
+
+Un sistema que nos permite gestionar tareas diarias, pudiendo hacer un seguimiento, asignar prioridades, etc...
+
+Requisitos Funcionales:
+
+Agregar Tarea: El usuario debe poder agregar una nueva tarea con un nombre y una descripción.
+
+Listar Tareas: El usuario debe poder ver una lista de todas las tareas pendientes.
+
+Marcar Tarea como Completada: El usuario debe poder marcar una tarea como completada.
+
+Eliminar Tarea: El usuario debe poder eliminar una tarea.
+
+Prioridad de Tareas: El sistema debe permitir que el usuario establezca una prioridad para cada tarea (alta, media, baja).
+
+Sprint Planning (Scrum): El sistema debe permitir al usuario organizar las tareas en sprints, asignando tareas a un sprint específico.
+
+Finalización del Sprint (Scrum): El usuario debe poder finalizar un sprint y comenzar uno nuevo.
