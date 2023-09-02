@@ -1,43 +1,43 @@
 Algoritmo DailyTaskManager
 	
 Definir NombreTarea, DescripcionTarea, PrioridadTarea Como Caracter
-Definir TareaCompletada, SprintCompletado como Logico
-Definir Tareas, TareasEnSprint como Entero
+Definir TareaCompletada como Logico
+Definir Tareas como Entero
 	NombreTarea <- ""
 	DescripcionTarea <- ""
 	PrioridadTarea <- ""
 	TareaCompletada <- Falso
 	Tareas <- 0
-	SprintCompletado <- Falso
-	TareasEnSprint <- 0
-	
+
     Repetir
-        Escribir("=== DailyTaskTracker ===")
-        Escribir("1. Agregar Tarea")
-        Escribir("2. Listar Tarea")
-        Escribir("3. Marcar Tarea como Completada")
-        Escribir("4. Eliminar Tarea")
-        Escribir("5. Crear Sprint")
-        Escribir("6. Completar Sprint")
-        Escribir("7. Salir")
-        Escribir("===================================")
-        Escribir("Seleccione una opcion: ")
+        Escribir "=== DailyTaskTracker ==="
+        Escribir "1. Agregar Tarea"
+        Escribir "2. Listar Tarea"
+        Escribir "3. Marcar Tarea como Completada"
+        Escribir "4. Eliminar Tarea"
+        Escribir "5. Salir"
+        Escribir "==================================="
+        Escribir "Seleccione una opcion: "
         Leer Opcion
         
         Segun opcion Hacer
             1:
-                Escribir("Nombre de la tarea: ")
+                Escribir "Nombre de la tarea: "
                 Leer NombreTarea
                 
-                Escribir("Descripcion de la tarea: ")
+                Escribir "Descripcion de la tarea: "
                 Leer DescripcionTarea
                 
-                Escribir("Prioridad de la tarea (alta, media, baja): ")
-                Leer PrioridadTarea
-                
+                Escribir "Prioridad de la tarea (alta, media, baja): "
+				Leer PrioridadTarea
+				Si PrioridadTarea <> "alta" o PrioridadTarea <> "media" o PrioridadTarea <> "baja" Entonces
+					Escribir "Elija una de las opciones disponibles"
+					Leer PrioridadTarea
+					Fin si
                 TareaCompletada <- Falso
                 Tareas <- Tareas + 1
-                
+		
+			
             2:
                 Si Tareas > 0 Entonces
                     Escribir "Nombre de la tarea: ", NombreTarea
@@ -72,27 +72,10 @@ Definir Tareas, TareasEnSprint como Entero
                 FinSi
                 
             5:
-                Si SprintCompletado Entonces
-                    Escribir "No puede crear un nuevo sprint hasta que el sprint actual esté completado"
-                Sino
-                    Escribir "Nuevo sprint creado"
-                    SprintCompletado <- Falso
-                    TareasEnSprint <- 0
-                FinSi
-                
-            6:
-                Si TareasEnSprint = Tareas Entonces
-                    SprintCompletado <- Verdadero
-                    Escribir "Sprint completado"
-                Sino
-                    Escribir "Asegúrese de que todas las tareas estén asignadas al sprint antes de completarlo"
-                FinSi
-                
-            7:
                 Escribir "Saliendo del programa"
                 
             Otro:
                 Escribir "Opcion no valida"
         FinSegun
-	Hasta Que  opcion = 7
+	Hasta Que  opcion = 5
 FinAlgoritmo
